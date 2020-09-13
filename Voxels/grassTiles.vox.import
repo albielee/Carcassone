@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/grassTiles.vox-9c6a6a37b0ae413eac3ef674e213a554.mesh"
+
+[deps]
+
+source_file="res://Voxels/grassTiles.vox"
+dest_files=[ "res://.import/grassTiles.vox-9c6a6a37b0ae413eac3ef674e213a554.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

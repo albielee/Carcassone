@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/church.vox-ef36426a3e3bc2b5c2f4df1818e26bf9.mesh"
+
+[deps]
+
+source_file="res://Voxels/church.vox"
+dest_files=[ "res://.import/church.vox-ef36426a3e3bc2b5c2f4df1818e26bf9.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

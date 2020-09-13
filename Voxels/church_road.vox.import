@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/church_road.vox-f7100c42d1b8b66a3c03c6be2202203a.mesh"
+
+[deps]
+
+source_file="res://Voxels/church_road.vox"
+dest_files=[ "res://.import/church_road.vox-f7100c42d1b8b66a3c03c6be2202203a.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false
