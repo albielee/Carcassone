@@ -1,0 +1,1101 @@
+[gd_scene load_steps=97 format=2]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.29993, 1, 1.59427 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 1.59141, 1, 0.992267 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 1.60763, 1, 0.605787 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 1.60738, 1, 1.13295 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 1.61538, 1, 0.267877 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 1.61343, 1, 0.235931 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 1.56206, 1, 1.22359 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 1.58176, 1, 0.383355 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 1.60469, 1, 1.58722 )
+
+[sub_resource type="BoxShape" id=11]
+extents = Vector3( 0.797487, 1, 1.35551 )
+
+[sub_resource type="BoxShape" id=12]
+extents = Vector3( 0.567206, 1, 0.725055 )
+
+[sub_resource type="BoxShape" id=13]
+extents = Vector3( 0.226135, 1, 1.60525 )
+
+[sub_resource type="BoxShape" id=14]
+extents = Vector3( 1.36983, 1, 0.247259 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 0.575834, 1, 0.66608 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 0.413629, 1, 1.40506 )
+
+[sub_resource type="BoxShape" id=17]
+extents = Vector3( 0.750437, 1, 0.640835 )
+
+[sub_resource type="BoxShape" id=18]
+extents = Vector3( 0.409091, 1, 1.44537 )
+
+[sub_resource type="BoxShape" id=19]
+extents = Vector3( 0.746569, 1, 0.515401 )
+
+[sub_resource type="BoxShape" id=20]
+extents = Vector3( 0.767456, 1, 0.495732 )
+
+[sub_resource type="BoxShape" id=21]
+extents = Vector3( 1, 1, 1.40865 )
+
+[sub_resource type="BoxShape" id=22]
+extents = Vector3( 0.354484, 1, 0.633788 )
+
+[sub_resource type="BoxShape" id=23]
+extents = Vector3( 0.418686, 1, 0.420041 )
+
+[sub_resource type="BoxShape" id=24]
+extents = Vector3( 0.61449, 1, 0.435355 )
+
+[sub_resource type="BoxShape" id=25]
+extents = Vector3( 0.253562, 1, 1.34135 )
+
+[sub_resource type="BoxShape" id=26]
+extents = Vector3( 1.58157, 1, 0.169664 )
+
+[sub_resource type="BoxShape" id=27]
+extents = Vector3( 0.667105, 1, 1.58669 )
+
+[sub_resource type="BoxShape" id=28]
+extents = Vector3( 0.679279, 1, 1.59849 )
+
+[sub_resource type="BoxShape" id=29]
+extents = Vector3( 0.27891, 1, 0.330328 )
+
+[sub_resource type="BoxShape" id=30]
+extents = Vector3( 0.259094, 1, 0.429435 )
+
+[sub_resource type="BoxShape" id=31]
+extents = Vector3( 1, 1.36144, 0.844326 )
+
+[sub_resource type="BoxShape" id=32]
+extents = Vector3( 0.294318, 1, 0.732372 )
+
+[sub_resource type="BoxShape" id=33]
+extents = Vector3( 0.247202, 1, 0.640121 )
+
+[sub_resource type="BoxShape" id=34]
+extents = Vector3( 0.435699, 1, 0.633672 )
+
+[sub_resource type="BoxShape" id=35]
+extents = Vector3( 1.57854, 1, 0.937745 )
+
+[sub_resource type="BoxShape" id=36]
+extents = Vector3( 0.3823, 1, 0.618145 )
+
+[sub_resource type="BoxShape" id=37]
+extents = Vector3( 0.208838, 1, 0.615782 )
+
+[sub_resource type="BoxShape" id=38]
+extents = Vector3( 1.58748, 1, 0.422071 )
+
+[sub_resource type="BoxShape" id=39]
+extents = Vector3( 1.60234, 1, 0.577666 )
+
+[sub_resource type="BoxShape" id=40]
+extents = Vector3( 1.57941, 1, 0.569833 )
+
+[sub_resource type="BoxShape" id=41]
+extents = Vector3( 1.56425, 1, 0.523093 )
+
+[sub_resource type="BoxShape" id=42]
+extents = Vector3( 1.5929, 1, 0.311992 )
+
+[sub_resource type="BoxShape" id=43]
+extents = Vector3( 0.475956, 1, 0.424724 )
+
+[sub_resource type="BoxShape" id=44]
+extents = Vector3( 0.476869, 1, 0.476516 )
+
+[sub_resource type="BoxShape" id=45]
+extents = Vector3( 0.607105, 1, 0.768802 )
+
+[sub_resource type="BoxShape" id=46]
+extents = Vector3( 1.58405, 1, 0.324817 )
+
+[sub_resource type="BoxShape" id=47]
+extents = Vector3( 0.345163, 1, 0.867159 )
+
+[sub_resource type="BoxShape" id=48]
+extents = Vector3( 0.87062, 1, 0.362575 )
+
+[sub_resource type="BoxShape" id=49]
+extents = Vector3( 0.619772, 1, 0.610482 )
+
+[sub_resource type="BoxShape" id=50]
+extents = Vector3( 0.468887, 1, 0.72309 )
+
+[sub_resource type="BoxShape" id=51]
+extents = Vector3( 0.893973, 1, 0.328788 )
+
+[sub_resource type="BoxShape" id=52]
+extents = Vector3( 0.260881, 1, 1.57466 )
+
+[sub_resource type="BoxShape" id=53]
+extents = Vector3( 1.59405, 1, 0.280574 )
+
+[sub_resource type="BoxShape" id=54]
+extents = Vector3( 0.426604, 1, 0.381464 )
+
+[sub_resource type="BoxShape" id=55]
+extents = Vector3( 0.578551, 1, 0.597218 )
+
+[sub_resource type="BoxShape" id=56]
+extents = Vector3( 0.674281, 1, 1.60823 )
+
+[sub_resource type="BoxShape" id=57]
+extents = Vector3( 0.922223, 1, 0.628513 )
+
+[sub_resource type="BoxShape" id=58]
+extents = Vector3( 0.361359, 1, 1 )
+
+[sub_resource type="BoxShape" id=59]
+extents = Vector3( 0.626001, 1, 0.373761 )
+
+[sub_resource type="BoxShape" id=60]
+extents = Vector3( 0.660117, 1, 0.597796 )
+
+[sub_resource type="BoxShape" id=61]
+extents = Vector3( 0.623881, 1, 1.26305 )
+
+[sub_resource type="BoxShape" id=62]
+extents = Vector3( 0.499803, 1, 0.402698 )
+
+[sub_resource type="BoxShape" id=63]
+extents = Vector3( 0.302012, 1, 0.898262 )
+
+[sub_resource type="BoxShape" id=64]
+extents = Vector3( 0.694016, 1, 0.362219 )
+
+[sub_resource type="BoxShape" id=65]
+extents = Vector3( 0.604768, 1, 0.292445 )
+
+[sub_resource type="BoxShape" id=66]
+extents = Vector3( 1.59428, 1, 0.217678 )
+
+[sub_resource type="BoxShape" id=67]
+extents = Vector3( 0.58567, 1, 1.28578 )
+
+[sub_resource type="BoxShape" id=68]
+extents = Vector3( 0.574559, 1, 0.362792 )
+
+[sub_resource type="BoxShape" id=69]
+extents = Vector3( 0.334374, 1, 1 )
+
+[sub_resource type="BoxShape" id=70]
+extents = Vector3( 0.663012, 1, 0.314965 )
+
+[sub_resource type="BoxShape" id=71]
+extents = Vector3( 0.649441, 1, 0.619999 )
+
+[sub_resource type="BoxShape" id=72]
+extents = Vector3( 0.425944, 1, 0.335825 )
+
+[sub_resource type="BoxShape" id=73]
+extents = Vector3( 1.58925, 1, 0.260851 )
+
+[sub_resource type="BoxShape" id=74]
+extents = Vector3( 0.525342, 1, 0.605293 )
+
+[sub_resource type="BoxShape" id=75]
+extents = Vector3( 0.603323, 1, 0.304402 )
+
+[sub_resource type="BoxShape" id=76]
+extents = Vector3( 0.469462, 1, 0.593927 )
+
+[sub_resource type="BoxShape" id=77]
+extents = Vector3( 0.635282, 1, 0.628938 )
+
+[sub_resource type="BoxShape" id=78]
+extents = Vector3( 0.525164, 1, 0.638115 )
+
+[sub_resource type="BoxShape" id=79]
+extents = Vector3( 0.64417, 1, 0.343705 )
+
+[sub_resource type="BoxShape" id=80]
+extents = Vector3( 0.72606, 1, 0.309876 )
+
+[sub_resource type="BoxShape" id=81]
+extents = Vector3( 0.393454, 1, 0.707649 )
+
+[sub_resource type="BoxShape" id=82]
+extents = Vector3( 1.60119, 1, 0.404933 )
+
+[sub_resource type="BoxShape" id=83]
+extents = Vector3( 0.676753, 1, 0.665693 )
+
+[sub_resource type="BoxShape" id=84]
+extents = Vector3( 0.600678, 1, 0.682077 )
+
+[sub_resource type="BoxShape" id=85]
+extents = Vector3( 0.658388, 1, 0.320153 )
+
+[sub_resource type="BoxShape" id=86]
+extents = Vector3( 0.759372, 1, 0.294966 )
+
+[sub_resource type="BoxShape" id=87]
+extents = Vector3( 0.329976, 1, 0.709911 )
+
+[sub_resource type="BoxShape" id=88]
+extents = Vector3( 1.60084, 1, 0.250627 )
+
+[sub_resource type="BoxShape" id=89]
+extents = Vector3( 0.585169, 1, 0.62336 )
+
+[sub_resource type="BoxShape" id=90]
+extents = Vector3( 0.620885, 1, 0.625938 )
+
+[sub_resource type="BoxShape" id=91]
+extents = Vector3( 0.626513, 1, 0.694815 )
+
+[sub_resource type="BoxShape" id=92]
+extents = Vector3( 0.595831, 1, 0.681713 )
+
+[sub_resource type="BoxShape" id=93]
+extents = Vector3( 0.319072, 1, 0.650063 )
+
+[sub_resource type="BoxShape" id=94]
+extents = Vector3( 0.659507, 1, 0.28639 )
+
+[sub_resource type="BoxShape" id=95]
+extents = Vector3( 0.351501, 1, 0.714595 )
+
+[sub_resource type="BoxShape" id=96]
+extents = Vector3( 0.637355, 1, 0.309016 )
+
+[node name="TileColliders" type="Area"]
+
+[node name="c00300" type="CollisionShape" parent="." groups=[
+"0",
+]]
+visible = false
+shape = SubResource( 1 )
+disabled = true
+
+[node name="c00100" type="CollisionShape" parent="." groups=[
+"0",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2983, 0, 0 )
+visible = false
+shape = SubResource( 2 )
+disabled = true
+
+[node name="c00101" type="CollisionShape" parent="." groups=[
+"0",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.30277, 0, 0 )
+visible = false
+shape = SubResource( 2 )
+disabled = true
+
+[node name="c00102" type="CollisionShape" parent="." groups=[
+"0",
+]]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0.000431657, 0, 1.28952 )
+visible = false
+shape = SubResource( 2 )
+disabled = true
+
+[node name="c00103" type="CollisionShape" parent="." groups=[
+"0",
+]]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0.000431657, 0, -1.2957 )
+visible = false
+shape = SubResource( 2 )
+disabled = true
+
+[node name="c01100" type="CollisionShape" parent="." groups=[
+"1",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.611038 )
+visible = false
+shape = SubResource( 3 )
+disabled = true
+
+[node name="c01200" type="CollisionShape" parent="." groups=[
+"1",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.989422 )
+visible = false
+shape = SubResource( 4 )
+disabled = true
+
+[node name="c02200" type="CollisionShape" parent="." groups=[
+"2",
+"3",
+]]
+visible = false
+shape = SubResource( 5 )
+disabled = true
+
+[node name="c02100" type="CollisionShape" parent="." groups=[
+"2",
+"3",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.39009 )
+visible = false
+shape = SubResource( 6 )
+disabled = true
+
+[node name="c02111" type="CollisionShape" parent="." groups=[
+"2",
+"3",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.34093 )
+visible = false
+shape = SubResource( 7 )
+disabled = true
+
+[node name="c04200" type="CollisionShape" parent="." groups=[
+"4",
+"5",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.389913 )
+visible = false
+shape = SubResource( 8 )
+disabled = true
+
+[node name="c04100" type="CollisionShape" parent="." groups=[
+"4",
+"5",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.20266 )
+visible = false
+shape = SubResource( 9 )
+disabled = true
+
+[node name="c06200" type="CollisionShape" parent="." groups=[
+"6",
+]]
+visible = false
+shape = SubResource( 10 )
+disabled = true
+
+[node name="c07100" type="CollisionShape" parent="." groups=[
+"7",
+"8",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.795002, 0, 0.221675 )
+visible = false
+shape = SubResource( 11 )
+disabled = true
+
+[node name="c07101" type="CollisionShape" parent="." groups=[
+"7",
+"8",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.572861, 0, 0.841615 )
+visible = false
+shape = SubResource( 12 )
+disabled = true
+
+[node name="c07200" type="CollisionShape" parent="." groups=[
+"7",
+"8",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35057, 0, 0 )
+visible = false
+shape = SubResource( 13 )
+disabled = true
+
+[node name="c07201" type="CollisionShape" parent="." groups=[
+"7",
+"8",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.233218, 0, -1.37338 )
+visible = false
+shape = SubResource( 14 )
+disabled = true
+
+[node name="c07202" type="CollisionShape" parent="." groups=[
+"7",
+"8",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.577852, 0, -0.562626 )
+visible = false
+shape = SubResource( 15 )
+disabled = true
+
+[node name="c09100" type="CollisionShape" parent="." groups=[
+"9",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15697, 0, 0 )
+visible = false
+shape = SubResource( 16 )
+disabled = true
+
+[node name="c09101" type="CollisionShape" parent="." groups=[
+"9",
+]]
+visible = false
+shape = SubResource( 17 )
+disabled = true
+
+[node name="c09102" type="CollisionShape" parent="." groups=[
+"9",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15366, 0, 0 )
+visible = false
+shape = SubResource( 18 )
+disabled = true
+
+[node name="c09200" type="CollisionShape" parent="." groups=[
+"9",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.15109 )
+visible = false
+shape = SubResource( 19 )
+disabled = true
+
+[node name="c09210" type="CollisionShape" parent="." groups=[
+"9",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.10394 )
+visible = false
+shape = SubResource( 20 )
+disabled = true
+
+[node name="c10100" type="CollisionShape" parent="." groups=[
+"10",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.619397, 0, 0.183069 )
+visible = false
+shape = SubResource( 21 )
+disabled = true
+
+[node name="c10101" type="CollisionShape" parent="." groups=[
+"10",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.736611, 0, 0.946029 )
+visible = false
+shape = SubResource( 22 )
+disabled = true
+
+[node name="c10102" type="CollisionShape" parent="." groups=[
+"10",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.801111, 0, -0.986542 )
+visible = false
+shape = SubResource( 23 )
+disabled = true
+
+[node name="c10210" type="CollisionShape" parent="." groups=[
+"10",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.987538, 0, -0.155228 )
+visible = false
+shape = SubResource( 24 )
+disabled = true
+
+[node name="c10211" type="CollisionShape" parent="." groups=[
+"10",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34075, 0, 0.245316 )
+visible = false
+shape = SubResource( 25 )
+disabled = true
+
+[node name="c10200" type="CollisionShape" parent="." groups=[
+"10",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4405 )
+visible = false
+shape = SubResource( 26 )
+disabled = true
+
+[node name="c11100" type="CollisionShape" parent="." groups=[
+"11",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.969463, 0, 0 )
+visible = false
+shape = SubResource( 27 )
+disabled = true
+
+[node name="c11101" type="CollisionShape" parent="." groups=[
+"11",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.909164, 0, 0 )
+visible = false
+shape = SubResource( 28 )
+disabled = true
+
+[node name="c11102" type="CollisionShape" parent="." groups=[
+"11",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.25836 )
+visible = false
+shape = SubResource( 29 )
+disabled = true
+
+[node name="c11000" type="CollisionShape" parent="." groups=[
+"11",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018302, 0, 1.15392 )
+visible = false
+shape = SubResource( 30 )
+disabled = true
+
+[node name="c11300" type="CollisionShape" parent="." groups=[
+"11",
+]]
+visible = false
+shape = SubResource( 31 )
+disabled = true
+
+[node name="c12000" type="CollisionShape" parent="." groups=[
+"12",
+"13",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.854417 )
+visible = false
+shape = SubResource( 32 )
+disabled = true
+
+[node name="c12100" type="CollisionShape" parent="." groups=[
+"12",
+"13",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.537191, 0, 0.957749 )
+visible = false
+shape = SubResource( 33 )
+disabled = true
+
+[node name="c12110" type="CollisionShape" parent="." groups=[
+"12",
+"13",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.723414, 0, 0.951105 )
+visible = false
+shape = SubResource( 34 )
+disabled = true
+
+[node name="c12200" type="CollisionShape" parent="." groups=[
+"12",
+"13",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.625588 )
+visible = false
+shape = SubResource( 35 )
+disabled = true
+
+[node name="c12201" type="CollisionShape" parent="." groups=[
+"12",
+"13",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19821, 0, 0.815771 )
+visible = false
+shape = SubResource( 36 )
+disabled = true
+
+[node name="c12202" type="CollisionShape" parent="." groups=[
+"12",
+"13",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36833, 4.76837e-07, 0.852226 )
+visible = false
+shape = SubResource( 37 )
+disabled = true
+
+[node name="c14000" type="CollisionShape" parent="." groups=[
+"14",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0419803 )
+visible = false
+shape = SubResource( 38 )
+disabled = true
+
+[node name="c14100" type="CollisionShape" parent="." groups=[
+"14",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.986874 )
+visible = false
+shape = SubResource( 39 )
+disabled = true
+
+[node name="c14110" type="CollisionShape" parent="." groups=[
+"14",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.03041 )
+visible = false
+shape = SubResource( 40 )
+disabled = true
+
+[node name="c15110" type="CollisionShape" parent="." groups=[
+"15",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0511 )
+visible = false
+shape = SubResource( 41 )
+disabled = true
+
+[node name="c15000" type="CollisionShape" parent="." groups=[
+"15",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.196458 )
+visible = false
+shape = SubResource( 42 )
+disabled = true
+
+[node name="c15100" type="CollisionShape" parent="." groups=[
+"15",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11988, 0, -0.588362 )
+visible = false
+shape = SubResource( 43 )
+disabled = true
+
+[node name="c15101" type="CollisionShape" parent="." groups=[
+"15",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1138, 0, -0.636426 )
+visible = false
+shape = SubResource( 44 )
+disabled = true
+
+[node name="c15200" type="CollisionShape" parent="." groups=[
+"15",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.936566 )
+visible = false
+shape = SubResource( 45 )
+disabled = true
+
+[node name="c15201" type="CollisionShape" parent="." groups=[
+"15",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.31124 )
+visible = false
+shape = SubResource( 46 )
+disabled = true
+
+[node name="c16000" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.693979 )
+visible = false
+shape = SubResource( 47 )
+disabled = true
+
+[node name="c16001" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.693256, 0, 0 )
+visible = false
+shape = SubResource( 48 )
+disabled = true
+
+[node name="c16110" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.945805, 0, 0.962628 )
+visible = false
+shape = SubResource( 49 )
+disabled = true
+
+[node name="c16100" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.820554, 0, 0.871666 )
+visible = false
+shape = SubResource( 50 )
+disabled = true
+
+[node name="c16101" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.662564, 0, -0.697742 )
+visible = false
+shape = SubResource( 51 )
+disabled = true
+
+[node name="c16200" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32741, 0, 0 )
+visible = false
+shape = SubResource( 52 )
+disabled = true
+
+[node name="c16201" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.32337 )
+visible = false
+shape = SubResource( 53 )
+disabled = true
+
+[node name="c16202" type="CollisionShape" parent="." groups=[
+"16",
+"17",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.659198, 0, -0.659821 )
+visible = false
+shape = SubResource( 54 )
+disabled = true
+
+[node name="c18110" type="CollisionShape" parent="." groups=[
+"18",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00008, 0, 1.00433 )
+visible = false
+shape = SubResource( 55 )
+disabled = true
+
+[node name="c18100" type="CollisionShape" parent="." groups=[
+"18",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.919996, 0, 0 )
+visible = false
+shape = SubResource( 56 )
+disabled = true
+
+[node name="c18101" type="CollisionShape" parent="." groups=[
+"18",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.659644, 0, -0.980737 )
+visible = false
+shape = SubResource( 57 )
+disabled = true
+
+[node name="c18000" type="CollisionShape" parent="." groups=[
+"18",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0645828, 0, 0.607589 )
+visible = false
+shape = SubResource( 58 )
+disabled = true
+
+[node name="c18001" type="CollisionShape" parent="." groups=[
+"18",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.975997, 0, 0 )
+visible = false
+shape = SubResource( 59 )
+disabled = true
+
+[node name="c19110" type="CollisionShape" parent="." groups=[
+"19",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.938652, 0, 0.972594 )
+visible = false
+shape = SubResource( 60 )
+disabled = true
+
+[node name="c19100" type="CollisionShape" parent="." groups=[
+"19",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.953659, 0, 0.338549 )
+visible = false
+shape = SubResource( 61 )
+disabled = true
+
+[node name="c19101" type="CollisionShape" parent="." groups=[
+"19",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.07625, 0, -0.683413 )
+visible = false
+shape = SubResource( 62 )
+disabled = true
+
+[node name="c19000" type="CollisionShape" parent="." groups=[
+"19",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.710124 )
+visible = false
+shape = SubResource( 63 )
+disabled = true
+
+[node name="c19001" type="CollisionShape" parent="." groups=[
+"19",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.913618, 0, 0 )
+visible = false
+shape = SubResource( 64 )
+disabled = true
+
+[node name="c19200" type="CollisionShape" parent="." groups=[
+"19",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.784918 )
+visible = false
+shape = SubResource( 65 )
+disabled = true
+
+[node name="c19201" type="CollisionShape" parent="." groups=[
+"19",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.349 )
+visible = false
+shape = SubResource( 66 )
+disabled = true
+
+[node name="c20100" type="CollisionShape" parent="." groups=[
+"20",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.951352, 0, 0.32054 )
+visible = false
+shape = SubResource( 67 )
+disabled = true
+
+[node name="c20101" type="CollisionShape" parent="." groups=[
+"20",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01218, 0, -0.669721 )
+visible = false
+shape = SubResource( 68 )
+disabled = true
+
+[node name="c20000" type="CollisionShape" parent="." groups=[
+"20",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0427707, 0, 0.624161 )
+visible = false
+shape = SubResource( 69 )
+disabled = true
+
+[node name="c20001" type="CollisionShape" parent="." groups=[
+"20",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.924695, 0, 0 )
+visible = false
+shape = SubResource( 70 )
+disabled = true
+
+[node name="c20110" type="CollisionShape" parent="." groups=[
+"20",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.940099, 0, 0.97571 )
+visible = false
+shape = SubResource( 71 )
+disabled = true
+
+[node name="c20200" type="CollisionShape" parent="." groups=[
+"20",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.69409 )
+visible = false
+shape = SubResource( 72 )
+disabled = true
+
+[node name="c20201" type="CollisionShape" parent="." groups=[
+"20",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.35566 )
+visible = false
+shape = SubResource( 73 )
+disabled = true
+
+[node name="c21100" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.07941, 0, -1.00121 )
+visible = false
+shape = SubResource( 74 )
+disabled = true
+
+[node name="c21101" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.3237 )
+visible = false
+shape = SubResource( 75 )
+disabled = true
+
+[node name="c21102" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12129, 0, -0.959082 )
+visible = false
+shape = SubResource( 76 )
+disabled = true
+
+[node name="c21110" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.966063, 0, 0.962655 )
+visible = false
+shape = SubResource( 77 )
+disabled = true
+
+[node name="c21120" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05066, 0, 0.966067 )
+visible = false
+shape = SubResource( 78 )
+disabled = true
+
+[node name="c21020" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.990682, 0, 0 )
+visible = false
+shape = SubResource( 79 )
+disabled = true
+
+[node name="c21000" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.861077, 0, 0 )
+visible = false
+shape = SubResource( 80 )
+disabled = true
+
+[node name="c21010" type="CollisionShape" parent="." groups=[
+"21",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0770818, 0, 0.886943 )
+visible = false
+shape = SubResource( 81 )
+disabled = true
+
+[node name="c22100" type="CollisionShape" parent="." groups=[
+"22",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.787515 )
+visible = false
+shape = SubResource( 82 )
+disabled = true
+
+[node name="c22110" type="CollisionShape" parent="." groups=[
+"22",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.914366, 0, 0.898171 )
+visible = false
+shape = SubResource( 83 )
+disabled = true
+
+[node name="c22120" type="CollisionShape" parent="." groups=[
+"22",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.978084, 0, 0.886549 )
+visible = false
+shape = SubResource( 84 )
+disabled = true
+
+[node name="c22020" type="CollisionShape" parent="." groups=[
+"22",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.952171, 0, -0.0640526 )
+visible = false
+shape = SubResource( 85 )
+disabled = true
+
+[node name="c22000" type="CollisionShape" parent="." groups=[
+"22",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.810354, 0, -0.0775892 )
+visible = false
+shape = SubResource( 86 )
+disabled = true
+
+[node name="c22010" type="CollisionShape" parent="." groups=[
+"22",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0353885, 0, 0.907778 )
+visible = false
+shape = SubResource( 87 )
+disabled = true
+
+[node name="c22200" type="CollisionShape" parent="." groups=[
+"22",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4724 )
+visible = false
+shape = SubResource( 88 )
+disabled = true
+
+[node name="c23100" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.965971, 0, -0.949472 )
+visible = false
+shape = SubResource( 89 )
+disabled = true
+
+[node name="c23110" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.946268, 0, -0.929252 )
+visible = false
+shape = SubResource( 90 )
+disabled = true
+
+[node name="c23120" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.924077, 0, 0.913809 )
+visible = false
+shape = SubResource( 91 )
+disabled = true
+
+[node name="c23130" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.972446, 0, 0.928843 )
+visible = false
+shape = SubResource( 92 )
+disabled = true
+
+[node name="c23000" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0154841, 0, -0.934543 )
+visible = false
+shape = SubResource( 93 )
+disabled = true
+
+[node name="c23010" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.905455, 0, 0 )
+visible = false
+shape = SubResource( 94 )
+disabled = true
+
+[node name="c23020" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.028633, 0, 0.892256 )
+visible = false
+shape = SubResource( 95 )
+disabled = true
+
+[node name="c23030" type="CollisionShape" parent="." groups=[
+"23",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.918126, 0, -0.0117195 )
+visible = false
+shape = SubResource( 96 )
+disabled = true

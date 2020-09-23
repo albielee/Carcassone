@@ -2,18 +2,30 @@ extends Node
 
 
 var board = [
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
-	[null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
 ]
 #board will be filled with arrays of tiles each part of the board belongs to
 
@@ -56,6 +68,79 @@ func print_board():
 	for row in board:
 		print(row)
 
+func highlight_all_area(areaID):
+	#print(areaID)
+	#print_areamap()
+	#print("*****")
+	if(areaMap.has(areaID)):
+		for pos in areaMap[areaID][MAP.PATH]:
+			var tile = board[pos[1]][pos[0]]
+			if(tile != null):
+				tile.highlight_area(areaID)
+
+#test if there is any possible place for the tile to be put
+func is_tile_possible(tile):
+	var dirs = [[-1,0],[0,1],[1,0],[0,-1]]
+	for row in board:
+		for foundTile in row:
+			if(foundTile == null):
+				continue
+			else:
+				#dir
+				for i in range(4):
+					var pos = foundTile.get_pos()
+					var dirPosX = pos[1] + dirs[i][1]
+					var dirPosY = pos[0] + dirs[i][0]
+					var currentTile = board[dirPosY][dirPosX]
+					if(currentTile == null):
+						#rotation
+						for rot in range(4):
+							if(is_tile_allowed(tile, [dirPosY,dirPosX])):
+								return true
+							tile.rotate_tile()
+	return false
+
+#test if an area ID is completed, i.e. all open links are ended
+func is_area_completed(areaID, type):
+	if(type == TYPE.ROAD or type == TYPE.CITY):
+		var dirs = [[-1,0],[0,1],[1,0],[0,-1]]
+		for pos in areaMap[areaID][MAP.PATH]:
+			var tile = board[pos[0]][pos[1]]
+			var tileIDs = tile.get_ids(type)
+			for i in range(4):
+				var dirPosX = pos[1] + dirs[i][1]
+				var dirPosY = pos[0] + dirs[i][0]
+				var dirID = tileIDs[i]
+				var currentTile = board[dirPosY][dirPosX]
+				if(dirID == areaID):
+					if(currentTile == null):
+						return false
+	elif(type == TYPE.CHURCH):
+		var path = areaMap[areaID][MAP.PATH]
+		print(path)
+		if(path.size() != 9):
+			return false
+	elif(type == TYPE.GRASS):
+		var dirVertical = [[-1,0],[-1,0],[1,0],[1,0]]
+		var dirHorizontal = [[0,-1],[0,1],[0,1],[0,-1]]
+		for pos in areaMap[areaID][MAP.PATH]:
+			var tile = board[pos[0]][pos[1]]
+			var tileIDs = tile.get_ids(type)
+			for j in range(2):
+				var directions = []
+				if(j == 0):
+					directions = dirVertical
+				else:
+					directions = dirHorizontal
+					
+				for i in range(4):
+					var dirPosX = pos[1] + directions[i][1]
+					var dirPosY = pos[0] + directions[i][0]
+					var currentTile = board[dirPosY][dirPosX]
+					var dirID = tileIDs[j][i]
+					if(currentTile == null):
+						return false
+	return true
 func is_tile_allowed(tile, pos):
 	var dirs = [[-1,0],[0,1],[1,0],[0,-1]]
 	var areaIDs = tile.get_ids(TYPE.ROAD)
@@ -93,16 +178,43 @@ func is_tile_allowed(tile, pos):
 	
 	return true
 func place_tile(tile, pos):
-	board[pos[0]][pos[1]] = tile
-	tile.set_played()
-	tile.set_pos(pos)
-	#add to areas
-	add_areas(tile, pos, TYPE.ROAD)
-	add_areas(tile, pos, TYPE.CITY)
-	#exlusively for grass
-	add_grass_areas(tile, pos)
-	add_church_areas(tile, pos)
-	
+	#if pos out of range
+	if(pos[0] < board.size()-1 and pos[1] < board.size()-1):
+		
+		var oldRoadIDs =  [] + tile.get_ids(TYPE.ROAD)
+		var oldGrassIDs = [] + tile.get_ids(TYPE.GRASS)
+		var oldCityIDs =  [] + tile.get_ids(TYPE.CITY)
+		var oldChurchID = tile.get_church_id()
+		#print("old road ids:" +String(oldRoadIDs))
+		
+		board[pos[0]][pos[1]] = tile
+		tile.set_played()
+		tile.set_pos(pos)
+		#add to areas
+		add_areas(tile, pos, TYPE.ROAD)
+		add_areas(tile, pos, TYPE.CITY)
+		#exlusively for grass
+		add_grass_areas(tile, pos)
+		add_church_areas(tile, pos)
+		
+		print("ID="+String(ID))
+		var newRoadIDs = [] + tile.get_ids(TYPE.ROAD)
+		var newCityIDs = [] + tile.get_ids(TYPE.CITY)
+		var newGrassIDs = [] + tile.get_ids(TYPE.GRASS)
+		
+		for i in range(0,4):
+			#print("new road ids:" + String(tile.get_ids(TYPE.ROAD)))
+			#print("old road ids:" + String(oldRoadIDs[i]))
+			#print("new road ids:" + String(newRoadIDs[i]))
+			tile.rename_colliders(TYPE.ROAD, oldRoadIDs[i], newRoadIDs[i])
+			tile.rename_colliders(TYPE.CITY, oldCityIDs[i], newCityIDs[i])
+			tile.rename_colliders(TYPE.GRASS, oldGrassIDs[0][i], newGrassIDs[0][i])
+			tile.rename_colliders(TYPE.GRASS, oldGrassIDs[1][i], newGrassIDs[1][i])
+		
+		tile.rename_colliders(TYPE.CHURCH, oldChurchID, tile.get_church_id())
+		#print(tile.tileColliderDict)
+		#for t in tile.tileColliderDict:
+		#	print(t.get_name())
 
 func add_church_areas(tile, pos):
 	var directions = [[-1,-1],[-1,0],[-1,1],[0,1],[1,1],[1,0],[1,-1],[0,-1]]
@@ -117,15 +229,17 @@ func add_church_areas(tile, pos):
 			if(currentTile != null):
 				var churchID = tile.get_church_id()
 				add_to_area(churchID, currentTile.get_pos())
-	else:
-		for i in range(8):
-			var dirPosX = pos[1] + directions[i][1]
-			var dirPosY = pos[0] + directions[i][0]
-			var currentTile = board[dirPosY][dirPosX]
-			if(currentTile != null):
-				if(currentTile.is_church()):
-					var churchID = currentTile.get_church_id()
-					add_to_area(churchID, pos)
+				
+	for i in range(8):
+		var dirPosX = pos[1] + directions[i][1]
+		var dirPosY = pos[0] + directions[i][0]
+		var currentTile = board[dirPosY][dirPosX]
+		if(currentTile != null):
+			if(currentTile.is_church()):
+				var churchID = currentTile.get_church_id()
+				add_to_area(churchID, pos)
+				if(is_area_completed(churchID, TYPE.CHURCH)):
+					print("church completed")
 				
 #for roads and city
 func add_areas(tile, pos, type):
@@ -150,6 +264,8 @@ func add_areas(tile, pos, type):
 						add_to_area(oppositeID, pos)
 						replace(areaIDs, dirID, oppositeID)
 						tile.set_ids(type, areaIDs)
+						if(is_area_completed(oppositeID, type)):
+							print("completed in add to" +String(type) +" section")
 						#for all road ids, if road id == current id, id = oppositeID
 						#
 				else: #join two areas
@@ -157,11 +273,18 @@ func add_areas(tile, pos, type):
 					var oppositeID = get_opposite_id(otherIDs, i, dirs[i], type)
 					if(oppositeID != 0):
 						join_areas([dirID, oppositeID], type)
+						if(is_area_completed(ID, type)):
+							print("completed in join  "+String(type) +" section")
 		else: #if no opposite tile
 			if(dirID != 0 and dirID <= 4): #if road doesnt have an assigned ID, create a new road area on the map
 				create_area(tile, type, pos)
 				replace(areaIDs, dirID, ID)
 				tile.set_ids(type, areaIDs)
+				if(is_area_completed(ID, type)):
+					print("completed in create area section")
+		
+	#print(is_area_completed(ID, type))
+
 
 func add_grass_areas(tile, pos):
 	var areaIDs = tile.get_ids(TYPE.GRASS)
@@ -193,18 +316,24 @@ func add_grass_areas(tile, pos):
 						replace(areaIDs[0], dirID, oppositeID)
 						replace(areaIDs[1], dirID, oppositeID)
 						tile.set_ids(TYPE.GRASS, areaIDs)
+						if(is_area_completed(oppositeID, TYPE.GRASS)):
+							print("completed in add to grass section")
 				else: #join two areas
 					if(dirID != 0):
 						var otherIDs = currentTile.get_ids(TYPE.GRASS)[j]
 						var oppositeID = get_opposite_id(otherIDs, i, directions[i], TYPE.GRASS)
 						if(oppositeID != 0 and dirID != oppositeID):
 							join_grass_areas([dirID, oppositeID])
+							if(is_area_completed(ID, TYPE.GRASS)):
+								print("completed in join grass section")
 			else: #if no opposite tile
 				if(dirID != 0 and dirID <= 4): #if road doesnt have an assigned ID, create a new road area on the map
 					create_area(tile, TYPE.GRASS, pos)
 					replace(areaIDs[0], dirID, ID)
 					replace(areaIDs[1], dirID, ID)
 					tile.set_ids(TYPE.GRASS, areaIDs)
+					#if(is_area_completed(ID, TYPE.GRASS)):
+					#	print("completed in create section")
 
 func join_grass_areas(listIDs):
 	ID+=1
@@ -224,6 +353,7 @@ func join_grass_areas(listIDs):
 			replace(areaIDs[1], areaID, ID)
 			tileAtPos.set_ids(TYPE.GRASS, areaIDs)
 		
+	for areaID in listIDs:
 		#remove unused area ids	
 		areaMap.erase(areaID)
 	
@@ -235,7 +365,6 @@ func join_areas(listIDs, type):
 	var newMeaples = []
 	
 	for areaID in listIDs:
-		print(listIDs)
 		var positions = areaMap[areaID][MAP.PATH]
 		newAreaPath += positions
 		newMeaples += areaMap[areaID][MAP.MEAPLES]
@@ -248,6 +377,7 @@ func join_areas(listIDs, type):
 			replace(areaIDs, areaID, ID)
 			tileAtPos.set_ids(type, areaIDs)
 		
+	for areaID in listIDs:
 		#remove unused area ids	
 		areaMap.erase(areaID)
 	

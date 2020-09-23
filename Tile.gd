@@ -46,6 +46,8 @@ var isChurch = false
 var hasCityBonus = false
 var played = false
 
+var tileColliderDict = {}
+
 onready var roadIDs = tileIdSet[0]
 onready var grassIDs= tileIdSet[0]
 onready var cityIDs = tileIdSet[0]
@@ -64,8 +66,22 @@ func init(tileID):
 	meshInstance.set_mesh(meshPiece)
 	add_child(meshInstance)
 	tileWidth = meshInstance.get_aabb().get_longest_axis_size()
-	#$Sprite.set_frame(tileID)
+	
+	assign_tile_collision(tileID)
 
+func assign_tile_collision(tileID):
+	#c tile ID, type, ID, number of that ID
+	var collisionBoxes = get_tree().get_nodes_in_group(String(tileID))
+	for box in collisionBoxes:
+		box.disabled = false
+		box.visible = true
+		var boxType = box.get_name()[3]
+		var boxID = box.get_name()[4]
+		if(tileColliderDict.has([int(boxType), int(boxID)])):
+			tileColliderDict[  [int(boxType), int(boxID)]  ].append(box)
+		else:
+			tileColliderDict[  [int(boxType), int(boxID)]  ] = [box]
+	
 func set_played():
 	played = true
 	
@@ -73,7 +89,6 @@ func get_played():
 	return played
 
 func rotate_tile():
-	$Sprite.rotation_degrees += 90
 	meshInstance.set_rotation_degrees(Vector3(0,meshInstance.get_rotation_degrees().y - 90,0))
 	
 	rotate_array(roadIDs)
@@ -128,7 +143,7 @@ func has_city_bonus():
 	
 func set_pos(pos):
 	boardPos = pos
-	global_transform.origin = Vector3(pos[1]*tileWidth,0, pos[0]*tileWidth)
+	global_transform.origin = Vector3(pos[1]*tileWidth, 0, pos[0]*tileWidth)
 
 func get_pos():
 	return boardPos
